@@ -1,0 +1,164 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.load{
+	animation: slide 2s;
+}
+
+.slider{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 30s infinite;
+}
+
+.content{
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal{
+	
+}
+
+.principal h1{
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.principal p{
+	font-size: 20px;
+}
+
+@keyframes slide{
+	0%{
+		background-image: url('img/veko.jpg');
+	}
+	20%{
+		background-image: url('./img/pak.jpg');
+	}
+	20.01%{
+		background-image: url('./img/yo.jpg');
+	}
+	40%{
+		background-image: url('./img/alex.jpg');
+	}
+	40.01%{
+		background-image: url('./img/jays.jpg');
+	}
+	60%{
+		background-image: url('./img/veko.jpg');
+	}
+	60.01%{
+		background-image: url('./img/pak.jpg');
+	}
+	80%{
+		background-image: url('./img/yo.jpg');
+	}
+	80.01%{
+		background-image: url('./img/veko.jpg');
+	}
+	100%{
+		background-image: url('./img/pak.jpg');
+	}
+	}
+
+
+/* dropdown area */
+	body{
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin:0;
+    background-color: #f4f4f4;
+  }
+
+  /* Global */
+    .container{  
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+  }
+
+  section{
+  	width: 100%;
+  	height: 100vh;
+  }
+
+.menu{
+	position: absolute;
+	width: 100%;
+	background: rgba(255,255,255,.5);
+	padding: 0 100px;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+
+
+nav{
+	position: relative;
+	float: right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 33px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background: #184771;
+	color: #fff;
+
+}
+
+nav ul li ul{
+	display: block;
+	background: rgba(255,255,255,.5);
+	min-width: 250px;
+	position: absolute;
+	margin-top: 1px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	transform: translateY(40px);
+}
+
+nav ul li:hover ul{
+    opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+
+
+}
+
+nav ul li ul li a{
+	padding: 10px;
+}
+
+.logo{
+	font-family: 'Abel', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	padding: 20px;
+}
